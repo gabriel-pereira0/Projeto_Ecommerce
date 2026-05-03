@@ -12,7 +12,7 @@ export function CartProducts() {
 
   return (
     <>
-      <section className='flex flex-col justify-start overflow-auto gap-2'>
+      <section className='flex flex-col justify-start overflow-auto gap-2 h-3/5'>
         {cartItemsArray.map((product) => {
           return <CartItem {...product} key={`key_${product.id}`} />;
         })}
