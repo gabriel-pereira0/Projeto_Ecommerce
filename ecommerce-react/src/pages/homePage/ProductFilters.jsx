@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function ProductFilters() {
+export function ProductFilters({ setFemaleProducts }) {
   return (
     <>
       <section className='flex justify-center item-center py-8'>
@@ -9,6 +9,7 @@ export function ProductFilters() {
           type='radio'
           name='filter-selection'
           className='hidden'
+          onClick={() => setFemaleProducts(null)}
         />
         <label
           className='rounded-s-lg bg-slate-950 hover:bg-slate-700 p-2 text-sm text-slate-100 cursor-pointer'
@@ -21,6 +22,7 @@ export function ProductFilters() {
           type='radio'
           name='filter-selection'
           className='hidden'
+          onClick={() => setFemaleProducts(false)}
         />
         <label
           className=' bg-slate-950 hover:bg-slate-700 p-2 text-sm text-slate-100 cursor-pointer'
@@ -33,6 +35,7 @@ export function ProductFilters() {
           type='radio'
           name='filter-selection'
           className='hidden'
+          onClick={() => setFemaleProducts(true)}
         />
         <label
           dir='rtl'
