@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 import { catalogIndexedById } from '../../utils/catalog';
-import { CartContext } from '../../contexts/CartContext';
+import { useCartContext } from '../../contexts/CartContext';
 
 function CalculateTotalPrice(cartObject) {
   let price = 0;
@@ -12,7 +12,7 @@ function CalculateTotalPrice(cartObject) {
 }
 
 export function TotalPriceCell() {
-  const { cartItems } = useContext(CartContext);
+  const { cartItems } = useCartContext();
   const totalPrice = CalculateTotalPrice(cartItems);
   return (
     <>

@@ -1,15 +1,15 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
-import { CartContext } from '../../contexts/CartContext';
+import { useCartContext } from '../../contexts/CartContext';
 import { CartProducts } from './CartProducts';
 import { TotalPriceCell } from './TotalPriceCell';
 
 export function CartOverlay() {
-  const { toggleIsCartOpen, isCartOpen } = useContext(CartContext);
+  const { toggleIsCartOpen, isCartOpen } = useCartContext();
   return (
     <div
       className={`h-screen w-screen fixed top-0 left-0 flex justify-end z-20 ease-in-out duration-300 ${isCartOpen ? 'translate-x-0' : 'translate-x-full'}`}

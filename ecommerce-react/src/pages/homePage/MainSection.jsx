@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ProductsContainer } from './ProductsContainer';
 import { ProductFilters } from './ProductFilters';
+import { useSearchParams } from 'react-router';
 
 export function MainSection() {
-  const [femaleProducts, setFemaleProducts] = useState(null);
+  const [searchParams, setSearchParams] = useSearchParams();
+  console.log(typeof setSearchParams);
   return (
     <>
-      <ProductFilters setFemaleProducts={setFemaleProducts} />
-      <ProductsContainer femaleProducts={femaleProducts} />
+      <ProductFilters setSearchParams={setSearchParams} />
+      <ProductsContainer searchParams={searchParams} />
     </>
   );
 }
