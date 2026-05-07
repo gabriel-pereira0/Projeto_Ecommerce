@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { catalogIndexedById } from '../../utils/catalog';
+import { catalogIndexedById } from '../utils/catalog';
 import { useCartContext } from '../../contexts/CartContext';
 
 function CalculateTotalPrice(cartObject) {

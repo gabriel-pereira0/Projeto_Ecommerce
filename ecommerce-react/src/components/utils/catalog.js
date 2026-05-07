@@ -1,11 +1,11 @@
-import product1Img from '../assets/img/product-1.jpg';
-import product2Img from '../assets/img/product-2.jpg';
-import product3Img from '../assets/img/product-3.jpg';
-import product4Img from '../assets/img/product-4.jpg';
-import product5Img from '../assets/img/product-5.jpg';
-import product6Img from '../assets/img/product-6.jpg';
-import product7Img from '../assets/img/product-7.jpg';
-import product8Img from '../assets/img/product-8.jpg';
+import product1Img from '../../assets/img/product-1.jpg';
+import product2Img from '../../assets/img/product-2.jpg';
+import product3Img from '../../assets/img/product-3.jpg';
+import product4Img from '../../assets/img/product-4.jpg';
+import product5Img from '../../assets/img/product-5.jpg';
+import product6Img from '../../assets/img/product-6.jpg';
+import product7Img from '../../assets/img/product-7.jpg';
+import product8Img from '../../assets/img/product-8.jpg';
 
 export const catalog = [
   {

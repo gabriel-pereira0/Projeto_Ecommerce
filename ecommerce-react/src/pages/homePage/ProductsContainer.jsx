@@ -1,6 +1,6 @@
 import React from 'react';
 import { ProductCard } from './ProductCard';
-import { catalog } from '../../utils/catalog';
+import { catalog } from '../../components/utils/catalog';
 
 export function ProductsContainer({ searchParams }) {
   searchParams.get('filterby');
