@@ -6,6 +6,10 @@ import product5Img from '../../assets/img/product-5.jpg';
 import product6Img from '../../assets/img/product-6.jpg';
 import product7Img from '../../assets/img/product-7.jpg';
 import product8Img from '../../assets/img/product-8.jpg';
+import product9Img from '../../assets/img/product-9.jpg';
+import product10Img from '../../assets/img/product-10.jpg';
+import product11Img from '../../assets/img/product-11.jpg';
+import product12Img from '../../assets/img/product-12.jpg';
 
 export const catalog = [
   {
@@ -70,6 +74,38 @@ export const catalog = [
     name: 'Colete Comprido com Cinto',
     price: 88,
     image: product8Img,
+    feminine: true,
+  },
+  {
+    id: 9,
+    brand: 'Zara',
+    name: 'Colete Comprido com Cinto',
+    price: 88,
+    image: product9Img,
+    feminine: true,
+  },
+  {
+    id: 10,
+    brand: 'Zara',
+    name: 'Colete Comprido com Cinto',
+    price: 88,
+    image: product10Img,
+    feminine: true,
+  },
+  {
+    id: 11,
+    brand: 'Zara',
+    name: 'Colete Comprido com Cinto',
+    price: 88,
+    image: product11Img,
+    feminine: true,
+  },
+  {
+    id: 12,
+    brand: 'Zara',
+    name: 'Colete Comprido com Cinto',
+    price: 88,
+    image: product11Img,
     feminine: true,
   },
 ];
