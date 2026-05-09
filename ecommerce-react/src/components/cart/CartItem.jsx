@@ -38,7 +38,7 @@ export function CartItem({ id, amount }) {
               {amount}
             </p>
             <button
-              className='flex items-center border border-slate-400 hover:border-slate-900 mb-2 cursor-pointer rounded-full w-6 h-6 text-xs'
+              className='flex items-center border border-slate-400 hover:border-slate-900 mb-2 cursor-pointer rounded-full w-6 h-6 text-xs '
               onClick={() => addToCart(id)}
             >
               <FontAwesomeIcon icon={faPlus} className='p-1' />
