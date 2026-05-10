@@ -1,10 +1,12 @@
 import React from 'react';
+import { MainHomeSection } from './MainHomeSection';
+import { ProductsHome } from '../productsPage/ProductsHome';
 
 export function Home() {
   return (
     <>
-      <div>Page Home</div>
-      <div>Page Home</div>
+      <MainHomeSection />
+      <ProductsHome />
     </>
   );
 }

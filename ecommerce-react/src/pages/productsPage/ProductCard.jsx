@@ -3,10 +3,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 import { useCartContext } from '../../contexts/CartContext';
 
-export function ProductCard({ id, name, brand, image, feminine, price }) {
+export function ProductCard({
+  id,
+  name,
+  brand,
+  image,
+  feminine,
+  price,
+  compact = false,
+}) {
   const { addToCart } = useCartContext();
   return (
-    <article className='relative card-produto group w-60 shadow-xl flex flex-col border-2 border-gray-100 rounded-xl p-2 overflow-hidden'>
+    <article
+      className={`relative card-produto group ${compact ? 'w-50' : 'w-60'} shadow-xl flex flex-col border-2 border-gray-100 rounded-xl p-2 overflow-hidden`}
+    >
       <div className='overflow-hidden rounded-xl'>
         <img
           src={image}
@@ -18,7 +28,9 @@ export function ProductCard({ id, name, brand, image, feminine, price }) {
       <div className=' flex flex-1 flex-col justify-end transition-all duration-300 group-hover:-translate-y-2'>
         <p className='text-m text-slate-400 group-hover:opacity-0'>{brand}</p>
         <p className='text-m line-clamp-2 min-h-[30px]'>{name}</p>
-        <p className='text-lg text-green-700 group-hover:opacity-0'>
+        <p
+          className={`${compact ? 'text-sm' : 'text- g'} text-green-700 group-hover:opacity-0`}
+        >
           R$ {price}
         </p>
       </div>
